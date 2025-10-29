@@ -1,0 +1,48 @@
+<div>
+  <h2>Contáctanos</h2>
+  <div class="contact-section">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmitContact()" novalidate>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input
+          id="name"
+          placeholder="Ana"
+          formControlName="name"
+          [class.invalid-field]="name?.invalid && name?.touched"
+        />
+        @if (getError('name')){
+        <div class="error-messages">
+          <p>{{ getError('name') }}</p>
+        </div>
+        }
+
+        <label for="lastName">Apellidos</label>
+        <input
+          id="lastName"
+          placeholder="Gonzalez"
+          formControlName="lastName"
+          [class.invalid-field]="lastName?.invalid && lastName?.touched"
+        />
+        @if (getError('lastName')){
+        <div class="error-messages">
+          <p class="error-messages">{{ getError('lastName') }}</p>
+        </div>
+        }
+        <label for="email">email:</label>
+        <input
+          id="email"
+          placeholder="anaGonzalez@hotmail.com"
+          formControlName="email"
+          [class.invalid-field]="email?.invalid && email?.touched"
+        />
+        @if (getError('email')){
+        <div class="error-messages">
+          <p>{{ getError('email') }}</p>
+        </div>
+        }
+      </div>
+
+      <button type="submit" [disabled]="contactForm.invalid">Contactar</button>
+    </form>
+  </div>
+</div>
