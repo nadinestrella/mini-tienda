@@ -1,1 +1,17 @@
-<p>banner works!</p>
+<div class="carousel-container">
+  <button class="nav-btn left" (click)="prev()">left</button>
+
+  <div class="carousel-slide">
+    <img [src]="images[currentIndex]" alt="imagen carrusel" />
+  </div>
+
+  <button class="nav-btn right" (click)="next()">right</button>
+</div>
+
+<div class="dots">
+  <span
+    *ngFor="let img of images; let i = index"
+    [class.active]="i === currentIndex"
+    (click)="currentIndex = i"
+  ></span>
+</div>

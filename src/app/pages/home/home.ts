@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 import { Search } from '../../components/search/search';
+import { Banner } from '../../components/banner/banner';
 
 @Component({
   selector: 'app-home',
-  imports: [ButtonModule, Search],
+  imports: [Search, Banner],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
