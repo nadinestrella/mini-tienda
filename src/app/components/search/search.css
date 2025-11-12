@@ -16,3 +16,9 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.search-btn:hover {
+  background: #717171;
+  cursor: pointer;
+  color: white;
+}

@@ -1,0 +1,25 @@
+.sections {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.category {
+  margin-top: 10px;
+  height: 200px;
+  width: 150px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.category:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
