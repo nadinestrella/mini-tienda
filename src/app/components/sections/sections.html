@@ -2,7 +2,24 @@
   <h3 class="title">Compra por Categorias</h3>
   <span class="subtitle"> Encuentra lo que necesitas </span>
 
+  @if (product()){
+
   <div class="sections-container">
-    <div class="category">categoria</div>
+    @for (category of (product() | uniqueCategories); track category) {
+    <div class="category">
+      <span class="category-text"
+        ><strong>{{ category }}</strong></span
+      >
+    </div>
+
+    } @empty {
+
+    <p>No hay categorias disponibles en este momento</p>
+    }
   </div>
+
+  }@else {
+  <p>Cargando categorias...</p>
+  <i class="fa-solid fa-clock-rotate-left"></i>
+  }
 </div>
