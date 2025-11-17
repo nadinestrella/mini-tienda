@@ -1,1 +1,13 @@
-<p>category works!</p>
+<h3>Productos en {{ categorySlug() }}</h3>
+
+<div>
+  @for (item of filteredProducts(); track item.id){
+  <div>
+    <img [src]="item.image" alt="{{ item.title }}" />
+    <h4>{{ item.title }}</h4>
+    <p>{{ item.price }}</p>
+  </div>
+  } @empty {
+  <p>No hay productos disponibles.</p>
+  }
+</div>

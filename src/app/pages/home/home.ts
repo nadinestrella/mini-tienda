@@ -5,7 +5,7 @@ import { Sections } from '../../components/sections/sections';
 
 @Component({
   selector: 'app-home',
-  imports: [Search, Banner, Sections],
+  imports: [Banner, Sections],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

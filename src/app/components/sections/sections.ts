@@ -3,6 +3,7 @@ import { Product as ProductService } from '../../services/product';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { UniqueCategoriesPipe } from './categories-unique.pipe';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sections',
@@ -12,6 +13,7 @@ import { UniqueCategoriesPipe } from './categories-unique.pipe';
 })
 export class Sections {
   private productService = inject(ProductService);
+  private router = inject(Router);
 
   public product = toSignal(this.productService.getProducts());
 
@@ -27,5 +29,10 @@ export class Sections {
 
   constructor() {
     console.log('valor inciial', this.product());
+  }
+
+  goToCategory(category: string) {
+    const slug = category.toLowerCase().replace(/'/g, '').replace(/\s+/g, '-');
+    this.router.navigate(['/category', slug]);
   }
 }

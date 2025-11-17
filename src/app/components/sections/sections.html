@@ -5,8 +5,8 @@
   @if (product()){
 
   <div class="sections-container">
-    @for (category of (product() | uniqueCategories); track category) {
-    <div class="category">
+    @for (category of (product() | uniqueCategories); track $index) {
+    <div class="category" (click)="goToCategory(category)">
       <span class="category-text"
         ><strong>{{ category }}</strong></span
       >

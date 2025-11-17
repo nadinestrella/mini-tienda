@@ -1,7 +1,10 @@
 <h2>Productos Disponibles</h2>
+
+<search (searchChange)="setSearch($event)"></search>
+
 @if (products()) {
 <div class="product-grid">
-  @for (product of products(); track product.id) {
+  @for (product of filteredProducts(); track product.id) {
   <app-product-card [product]="product"></app-product-card>
   } @empty {
   <p>No hay productos disponibles en este momento.</p>

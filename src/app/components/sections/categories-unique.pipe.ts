@@ -6,7 +6,7 @@ import { ProductInterface } from '../../models/product.model';
   standalone: true,
 })
 export class UniqueCategoriesPipe implements PipeTransform {
-  transform(products: ProductInterface[] | undefined): string[] {
+  transform(products: ProductInterface[] | null | undefined): string[] {
     if (!products) return [];
 
     const categoriesSet = new Set<string>();
