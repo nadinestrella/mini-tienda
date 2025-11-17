@@ -3,13 +3,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'banner',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './banner.html',
   styleUrl: './banner.css',
 })
 export class Banner {
   images = [
-    '/assets/images/anna-keibalo.jpg',
+    'assets/images/anna-keibalo.jpg',
     'assets/images/banner.jpg',
     'assets/images/yunus-tug.jpg',
   ];
@@ -22,5 +23,9 @@ export class Banner {
 
   prev() {
     this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+  }
+
+  constructor() {
+    console.log('images', this.images);
   }
 }

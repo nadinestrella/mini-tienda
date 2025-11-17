@@ -22,7 +22,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #6095cbff;
   color: white;
   border: none;
   font-size: 1rem;
@@ -34,7 +34,7 @@
 }
 
 .nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #b0c4de;
 }
 
 .left {
@@ -63,5 +63,5 @@
 }
 
 .dots span.active {
-  background-color: #717171;
+  background-color: #6095cb;
 }
