@@ -43,7 +43,13 @@ commentControl?.errors?.['minlength'].requiredLength }}
           </div>
           }
         </div>
-        <button type="submit" [disabled]="reviewForm.invalid">Enviar Reseña</button>
+
+        <app-button
+          type="submit"
+          text="Enviar Reseña"
+          [disabled]="reviewForm.invalid"
+          color="primary"
+        ></app-button>
       </form>
     </div>
   </div>

@@ -42,7 +42,12 @@
         }
       </div>
 
-      <button type="submit" [disabled]="contactForm.invalid">Contactar</button>
+      <app-button
+        type="submit"
+        text="Contactar"
+        [disabled]="contactForm.invalid"
+        color="primary"
+      ></app-button>
     </form>
   </div>
 </div>

@@ -7,11 +7,12 @@ import { catchError, EMPTY, switchMap, tap } from 'rxjs'; //Manejo de errores
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ProductInterface } from '../../models/product.model';
 
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'; // 1. Importa cosas de Forms
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Button } from '../../components/button/button'; // 1. Importa cosas de Forms
 
 @Component({
   selector: 'app-product-detail',
-  imports: [CommonModule, RouterLink, ReactiveFormsModule], // 2. Agrega ReactiveFormsModule
+  imports: [CommonModule, RouterLink, ReactiveFormsModule, Button], // 2. Agrega ReactiveFormsModule
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.css',
 })

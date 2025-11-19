@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'; // 1. Importa cosas de Forms
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Button } from '../../components/button/button'; // 1. Importa cosas de Forms
 
 @Component({
   selector: 'app-contact',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, Button],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
