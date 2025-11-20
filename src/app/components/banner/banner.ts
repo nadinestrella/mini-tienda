@@ -9,11 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './banner.css',
 })
 export class Banner {
-  images = [
-    'assets/images/anna-keibalo.jpg',
-    'assets/images/banner.jpg',
-    'assets/images/yunus-tug.jpg',
-  ];
+  images = ['img/anna-keibalo.jpg', 'img/banner.jpg', 'img/yunus-tug.jpg'];
 
   currentIndex = 0;
 
