@@ -1,13 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet, RouterLinkActive, RouterLink } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Footer } from './components/footer/footer';
+import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLinkActive, RouterLink],
+  imports: [RouterOutlet, Footer, Header],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('taller-tienda-angular');
-  currentYear = new Date().getFullYear();
-}
+export class App {}

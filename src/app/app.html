@@ -1,21 +1,7 @@
-<header>
-  <nav>
-    <ul>
-      <li>
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-          >Inicio</a
-        >
-      </li>
-      <li><a routerLink="/products" routerLinkActive="active">Productos</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<app-header />
 
 <main>
   <router-outlet></router-outlet>
 </main>
 
-<footer>
-  <p>&copy; {{ currentYear }} Mini Tienda Angular</p>
-</footer>
+<app-footer />

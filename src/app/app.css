@@ -10,32 +10,7 @@ body {
   min-height: 100vh;
   color: #333;
 }
-header {
-  background-color: #6095cbff; /* Azul Angular */
-  color: white;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-header nav ul {
-  list-style: none;
-  padding: 0;
 
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-}
-header nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 0.8rem;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-header nav a:hover,
-header nav a.active {
-  /* Estilo para el enlace activo */
-  background-color: rgba(255, 255, 255, 0.2);
-}
 main {
   flex-grow: 1; /* Ocupa el espacio vertical disponible */
   padding: 1.5rem;
@@ -44,14 +19,7 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
-footer {
-  background-color: #f5f5f5;
-  padding: 1rem;
-  text-align: center;
-  margin-top: auto; /* Empuja el footer hacia abajo */
-  color: #6095cbff;
-  font-size: 0.9rem;
-}
+
 /* Estilos generales para botones, etc. (puedes añadir más) */
 button {
   padding: 0.7rem 1.5rem;
