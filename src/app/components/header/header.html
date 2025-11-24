@@ -1,5 +1,5 @@
 <header>
-  <nav>
+  <nav class="header-container">
     <ul>
       <li *ngFor="let option of headerOptions">
         <a
@@ -11,5 +11,8 @@
         </a>
       </li>
     </ul>
+    <div class="icon-container">
+      <a href="#" *ngFor="let icon of headerIcons" [innerHTML]="icon"></a>
+    </div>
   </nav>
 </header>
