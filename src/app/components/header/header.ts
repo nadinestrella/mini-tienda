@@ -15,9 +15,9 @@ export class Header {
     { label: 'Contact', path: '/contact', exact: false },
   ];
 
-  public headerIcons: string[] = [
-    '<i class="fa-regular fa-heart"></i>',
-    '<i class="fa-solid fa-basket-shopping"></i>',
+  public headerIcons: { icon: string; path: string; exact: boolean }[] = [
+    { icon: '<i class="fa-regular fa-heart"></i>', path: '/cart', exact: false },
+    { icon: '<i class="fa-solid fa-basket-shopping"></i>', path: '/cart', exact: false },
   ];
 
   // <i class="fa-solid fa-heart"></i>

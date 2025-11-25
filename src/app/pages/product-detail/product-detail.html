@@ -9,6 +9,7 @@
     <h3>{{ product()?.title }}</h3>
     <p class="category">{{ product()?.category }}</p>
     <p class="price">{{ product()?.price | currency : 'USD' }}</p>
+    <app-button type="button" [color]="'primary'" [text]="'Añadir al carrito'" />
     <p class="description">{{ product()?.description }}</p>
     <p class="rating">
       Rating: {{ product()?.rating?.rate }}/5

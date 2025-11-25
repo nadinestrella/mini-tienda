@@ -12,7 +12,12 @@
       </li>
     </ul>
     <div class="icon-container">
-      <a href="#" *ngFor="let icon of headerIcons" [innerHTML]="icon"></a>
+      <a
+        href="#"
+        *ngFor="let icon of headerIcons"
+        [innerHTML]="icon.icon"
+        [routerLink]="icon.path"
+      ></a>
     </div>
   </nav>
 </header>
