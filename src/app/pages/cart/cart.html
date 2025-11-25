@@ -1,40 +1,37 @@
-<section>
-  <div>
-    <h2>Carrito de Compras</h2>
-  </div>
+<div>
+  <h2>Carrito de Compras</h2>
+  <div class="cart-container">
+    <section>
+      <div class="item-container">
+        <img class="item-img" />
 
-  <div class="item-container">
-    <img class="item-img" />
+        <div class="item-details">
+          <h3 class="item-title">Producto</h3>
+          <span class="item-details-remove"> <i class="fa-solid fa-x"></i>Remove</span>
+        </div>
+        <div class="item-quantity">
+          <h3 class="item-title">Cantidad</h3>
 
-    <div class="item-details">
-      <h3 class="item-title">Producto</h3>
-      <span class="item-details-remove"> <i class="fa-solid fa-x"></i>Remove</span>
-    </div>
-    <div class="item-quantity">
-      <h3 class="item-title">Cantidad</h3>
-
-      <div class="item-quantity-controls-container">
-        <button class="item-quantity-controls">-</button>
-        <span class="item-quantity-number">1</span>
-        <button class="item-quantity-controls">+</button>
+          <div class="item-quantity">
+            <button class="item-quantity-controls">-</button>
+            <span class="item-quantity-number">1</span>
+            <button class="item-quantity-controls">+</button>
+          </div>
+        </div>
+        <div>
+          <h3 class="item-title">Precio</h3>
+          <span>200</span>
+        </div>
       </div>
-    </div>
-    <div>
-      <h3 class="item-title">Precio</h3>
-      <span>200</span>
-    </div>
+    </section>
+
+    <aside class="total-section">
+      <h3 class="item-title">Total Compras</h3>
+      <span class="total-section__price">$200</span>
+      <div class="total-section__buttons">
+        <a class="total-section__button">Pagar</a>
+        <a href="/products" class="total-section__button">Continuar Comprando</a>
+      </div>
+    </aside>
   </div>
-
-  <!-- <div>
-    <div>
-      <p>Total Compras</p>
-
-      <div></div>
-    </div>
-  </div>
-
-  <div>
-    <a>Pagar</a>
-    <a>Continuar Comprando</a>
-  </div> -->
-</section>
+</div>
