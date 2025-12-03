@@ -38,7 +38,8 @@
   color: #6095cbff;
 }
 
-// Details Section
+/* Details Section */
+
 .item-details {
   flex: 1;
   display: flex;
@@ -58,7 +59,7 @@
   font-size: 12px;
 }
 
-// Quantity Section
+/* Quantity Section */
 
 .item-quantity {
   display: flex;
@@ -84,16 +85,15 @@
   padding: 0 10px;
 }
 
-// TotalSection
+/* Total Section */
 
 .total-section {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 16px;
-  display: flex; */
+  display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: red;
 }
 
 .total-section__price {
