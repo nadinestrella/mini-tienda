@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sections',
+  standalone: true,
   imports: [CommonModule, UniqueCategoriesPipe],
   templateUrl: './sections.html',
   styleUrl: './sections.css',

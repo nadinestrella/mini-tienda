@@ -3,10 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { Product as ProductService } from '../../services/product';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-category',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './category.html',
   styleUrl: './category.css',
 })
@@ -14,11 +16,9 @@ export class Category {
   private route = inject(ActivatedRoute);
   private productService = inject(ProductService);
 
-  categorySlug = toSignal(
-    this.route.paramMap.pipe(map((params) => params.get('categoryName') ?? ''))
-  );
-
+  // signals
   products = toSignal(this.productService.getProducts());
+  categorySlug = toSignal(this.route.paramMap.pipe(map((params) => params.get('slug') ?? '')));
 
   normalizeCategory(slug: string) {
     return slug

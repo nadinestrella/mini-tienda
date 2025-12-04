@@ -10,7 +10,7 @@ import { Cart } from './pages/cart/cart';
 export const routes: Routes = [
   { path: '', component: Home, title: 'Inicio - Mini Tienda' },
   { path: 'products', component: ProductList, title: 'Productos - Mini Tienda' },
-  { path: 'category/:id', component: Category, title: 'Categoria Producto -  Mini Tienda' },
+  { path: 'category/:slug', component: Category, title: 'Categoria Producto -  Mini Tienda' },
   { path: 'product/:id', component: ProductDetail, title: 'Detalle Producto -  Mini Tienda' },
   { path: 'contact', component: Contact, title: 'Contact -  Mini Tienda' },
   { path: 'cart', component: Cart, title: 'Carrito -  Mini Tienda' },

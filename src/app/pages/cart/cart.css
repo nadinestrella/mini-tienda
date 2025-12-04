@@ -44,11 +44,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
-.item-details-remove {
+.item-details__remove {
   color: red;
   font-size: 14px;
+  margin-top: 10px;
 }
 .item-details-remove:hover {
   cursor: pointer;
@@ -63,26 +63,33 @@
 
 .item-quantity {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
-.item-quantity-controls {
+.item-quantity__controls {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.control-number {
+  font-size: 14px;
+  padding: 0 10px;
+}
+.controls {
+  background: #b0c4de;
   border: 1px solid #e0e0e0;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  color: white;
 }
-.item-quantity-controls:hover {
+.controls:hover {
   background-color: #d3d3d3;
-}
-
-.item-quantity-number {
-  font-size: 14px;
-  padding: 0 10px;
 }
 
 /* Total Section */
