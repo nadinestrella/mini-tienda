@@ -4,11 +4,12 @@ import { Product as ProductService } from '../../services/product';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { ProductCard } from '../../components/product-card/product-card';
 
 @Component({
   selector: 'app-category',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProductCard],
   templateUrl: './category.html',
   styleUrl: './category.css',
 })
