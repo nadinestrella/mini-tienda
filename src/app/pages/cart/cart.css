@@ -50,7 +50,7 @@
   font-size: 14px;
   margin-top: 10px;
 }
-.item-details-remove:hover {
+.item-details__remove:hover {
   cursor: pointer;
   color: darkred;
 }
